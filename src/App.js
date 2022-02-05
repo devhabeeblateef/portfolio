@@ -1,25 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
+import Background from './Components/Background';
+import backgroundVideo from './video/video2.mp4';
+import avatar from './Image/habeeb.jfif';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <video autoPlay loop muted id="video" class="grayscale">
+        <source src={backgroundVideo} type="video/mp4" />
+      </video>
+
+      <div class="overlay">
+      <div id="outerContainer">
+    <div id="container">
+      <div class="item">
+        <img src={avatar} />
+      </div>
+    <div class="circle" id="One"></div>
+    <div class="circle" id="Two"></div>
+    <div class="circle" id="Three"></div>
+    <div class="circle" id="Four"></div>
     </div>
+  </div>
+      </div>
+  </div>
   );
 }
 
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
 export default App;
