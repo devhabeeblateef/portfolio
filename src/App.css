@@ -147,6 +147,7 @@ url(
 }
 
 .item img {
+  /* border-radius: 50%; */
   width: 300px;
   filter: grayscale(60%);
   opacity: 0.8;

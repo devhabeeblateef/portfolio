@@ -51,6 +51,14 @@ function Bio()
   )
 }
 
+function Pages()
+{
+  return (
+    <div>
+    
+    </div>
+  )
+}
 function App()
 {
   return (
@@ -58,6 +66,7 @@ function App()
       <BG />
       <Avatar />
       <Bio />
+      <Pages />
     </div>
   )
 }
